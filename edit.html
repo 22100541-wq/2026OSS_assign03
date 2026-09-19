@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Edit Travel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="my.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">My Travel List</a>
+        <div>
+          <a class="btn btn-sm btn-outline-light me-2" href="index.html">Home</a
+          ><a class="btn btn-sm btn-primary" href="add.html">Add</a>
+        </div>
+      </div>
+    </nav>
+    <main class="container page-space">
+      <div class="card form-card shadow-sm">
+        <div class="card-body p-4 p-md-5">
+          <h1 class="h2 fw-bold">여행지 수정</h1>
+          <p class="text-secondary">기존 Tokyo 정보를 수정합니다.</p>
+          <form action="view.html">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">여행지 이름 *</label
+                ><input
+                  class="form-control"
+                  type="text"
+                  required
+                  minlength="2"
+                  maxlength="30"
+                  value="Tokyo"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">국가 *</label
+                ><select class="form-select" required>
+                  <option selected>Japan</option>
+                  <option>Japan</option>
+                  <option>France</option>
+                  <option>USA</option>
+                  <option>Thailand</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">도시 *</label
+                ><input
+                  class="form-control"
+                  type="text"
+                  required
+                  minlength="2"
+                  maxlength="30"
+                  value="Tokyo"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">여행 날짜 *</label
+                ><input
+                  class="form-control"
+                  type="date"
+                  required
+                  value="2026-12-20"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">여행 기간(일) *</label
+                ><input
+                  class="form-control"
+                  type="number"
+                  required
+                  min="1"
+                  max="30"
+                  value="5"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">여행 목적 *</label
+                ><select class="form-select" required>
+                  <option selected>관광</option>
+                  <option>관광</option>
+                  <option>휴식</option>
+                  <option>음식</option>
+                  <option>쇼핑</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">예상 비용(원) *</label
+                ><input
+                  class="form-control"
+                  type="number"
+                  required
+                  min="0"
+                  max="100000000"
+                  step="10000"
+                  value="1500000"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">방문 상태 *</label
+                ><select class="form-select" required>
+                  <option selected>방문 예정</option>
+                  <option>방문 예정</option>
+                  <option>방문 완료</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-4 d-flex gap-2">
+              <button class="btn btn-primary" type="submit">수정</button
+              ><a class="btn btn-outline-secondary" href="view.html">취소</a
+              ><a class="btn btn-outline-dark" href="index.html">List</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center py-4 mt-auto border-top bg-white text-secondary">
+      OSS Week 3 · CRUD Frontend Service
+    </footer>
+  </body>
+</html>

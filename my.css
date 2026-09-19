@@ -1,0 +1,94 @@
+body {
+    background: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+.card {
+    border: 0;
+    border-radius: 1rem
+}
+
+.form-card {
+    max-width: 850px;
+    margin: auto
+}
+
+.page-space {
+    padding-top: 4rem;
+    padding-bottom: 4rem
+}
+
+table a {
+    text-decoration: none;
+    font-weight: 700
+}
+
+.form-label {
+    font-weight: 600
+}
+
+.form-control,
+.form-select {
+    min-height: 46px
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    border-top: 1px solid #ddd
+}
+
+.detail-grid>div {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd
+}
+
+.label {
+    font-weight: 700;
+    background: #f8f9fa
+}
+
+.confirm {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem
+}
+
+.confirm:target {
+    display: flex
+}
+
+.confirm-box {
+    width: 100%;
+    max-width: 420px
+}
+
+@media(max-width:576px) {
+    .page-space {
+        padding-top: 2rem;
+        padding-bottom: 2rem
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr
+    }
+
+    .label {
+        padding-bottom: .2rem !important;
+        border-bottom: 0 !important
+    }
+
+    .label+div {
+        padding-top: .2rem
+    }
+
+    .form-card .card-body {
+        padding: 1.25rem !important
+    }
+}

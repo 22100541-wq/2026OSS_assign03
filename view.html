@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Detail</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="my.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">My Travel List</a>
+      </div>
+    </nav>
+    <main class="container my-5">
+      <div class="card p-4">
+        <h2>Tokyo</h2>
+        <p class="text-muted">여행 상세 정보</p>
+        <hr />
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">여행지 이름</div>
+          <div class="col-md-8">Tokyo</div>
+        </div>
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">국가</div>
+          <div class="col-md-8">Japan</div>
+        </div>
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">도시</div>
+          <div class="col-md-8">Tokyo</div>
+        </div>
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">여행 날짜</div>
+          <div class="col-md-8">2026-12-20</div>
+        </div>
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">여행 기간</div>
+          <div class="col-md-8">5일</div>
+        </div>
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">여행 목적</div>
+          <div class="col-md-8">관광</div>
+        </div>
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">예상 비용</div>
+          <div class="col-md-8">1,500,000원</div>
+        </div>
+        <div class="row detail-row">
+          <div class="col-md-4 fw-bold">방문 상태</div>
+          <div class="col-md-8">
+            <span class="badge bg-primary">방문 예정</span>
+          </div>
+        </div>
+        <hr />
+        <a href="edit.html" class="btn btn-warning">Edit</a>
+        <button onclick="deleteTravel()" class="btn btn-danger">Delete</button>
+        <a href="index.html" class="btn btn-secondary">List</a>
+      </div>
+    </main>
+    <script>
+      function deleteTravel() {
+        if (confirm("이 여행지를 삭제할까요?")) {
+          alert("여행지가 삭제됩니다.");
+          window.location.href = "index.html";
+        }
+      }
+    </script>
+  </body>
+</html>
