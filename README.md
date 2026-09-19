@@ -16,13 +16,12 @@
 ## List Page
 index.html에서는 여행지 목록을 Table 형태로 만들었습니다.
 목록에는 다음 항목을 표시했습니다.
-여행지 이름
-국가
-여행 날짜
-여행 기간
-여행 목적
-예상 비용
-방문 상태
+번호  
+여행지 이름  
+국가  
+여행 날짜  
+여행 기간  
+방문 상태  
 여행지 이름을 누르면 상세 페이지인 view.html로 이동하고, Add 버튼을 누르면 add.html로 이동하도록 만들었습니다.
 ## Validation
 add.html과 edit.html의 Form에 HTML Validation을 적용했습니다.
