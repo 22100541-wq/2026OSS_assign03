@@ -31,7 +31,7 @@ add.html과 edit.html의 Form에 HTML Validation을 적용했습니다.
 `maxlength` : 입력할 수 있는 최대 글자 수 설정
 `min`, `max` : 여행 기간과 예상 비용의 입력 범위 설정
 `type="date"` : 여행 날짜를 날짜 형식으로 입력
-`select` : 국가, 여행 목적, 방문 상태를 선택하도록 구성
+`select` : 여행 목적, 방문 상태를 선택하도록 구성
 ## RWD
 Bootstrap Grid와 Media Query를 이용해서 Desktop과 Mobile 화면에 맞게 구성했습니다.
 Desktop에서는 Form을 2열로 표시하고, 화면이 작아지면 1열로 표시되도록 했습니다.  
